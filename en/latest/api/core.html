@@ -1,0 +1,532 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>readthedocs.core &mdash; Read the Docs 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Read the Docs 1.0 documentation" href="../index.html"/>
+        <link rel="up" title="API" href="index.html"/>
+        <link rel="next" title="readthedocs.projects" href="projects.html"/>
+        <link rel="prev" title="readthedocs.doc_builder" href="doc_builder.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.svg" class="logo" />
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../versions.html">Versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../builds.html">Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features.html">Read the Docs features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../yaml-config.html">Read the Docs YAML Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Read the Docs Public API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../embed.html">Embed API</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About Read the Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">Contributing to Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../team.html">Read the Docs Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gsoc.html">Google Summer of Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code-of-conduct.html">Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ethical-advertising.html">Ethical Ads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sponsors.html">Sponsors of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../open-source-philosophy.html">Read the Docs Open Source Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../story.html">The Story of Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../abandoned-projects.html">Policy for Abandoned Projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dmca/index.html">DMCA Takedown Policy</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Feature Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../webhooks.html">Webhooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../badges.html">Badges</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../alternate_domains.html">Alternate Domains</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../localization.html">Localization of Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../vcs.html">Version Control System Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../subprojects.html">Subprojects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conda.html">Conda Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../canonical.html">Canonical URLs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../single_version.html">Single Version Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../privacy.html">Privacy Levels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-defined-redirects.html">User-defined Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../automatic-redirects.html">Automatic Redirects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../features/embed.html">Content Embedding</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture.html">Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tests.html">Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs.html">Building and Contributing to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/standards.html">Front End Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/buildenvironments.html">Build Environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../symlinks.html">How we use symlinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../settings.html">Interesting Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../i18n.html">Internationalization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issue-labels.html">Overview of issue labels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security.html">Security</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">API</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bookmarks.html"><code class="docutils literal notranslate"><span class="pre">readthedocs.bookmarks</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="builds.html"><code class="docutils literal notranslate"><span class="pre">readthedocs.builds</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="doc_builder.html"><code class="docutils literal notranslate"><span class="pre">readthedocs.doc_builder</span></code></a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">readthedocs.core</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.core.admin"><code class="docutils literal notranslate"><span class="pre">readthedocs.core.admin</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.core.forms"><code class="docutils literal notranslate"><span class="pre">readthedocs.core.forms</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.core.middleware"><code class="docutils literal notranslate"><span class="pre">readthedocs.core.middleware</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.core.models"><code class="docutils literal notranslate"><span class="pre">readthedocs.core.models</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-readthedocs.core.views"><code class="docutils literal notranslate"><span class="pre">readthedocs.core.views</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#readthedocs-core-management-commands"><code class="docutils literal notranslate"><span class="pre">readthedocs.core.management.commands</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html"><code class="docutils literal notranslate"><span class="pre">readthedocs.projects</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="vcs_support.html"><code class="docutils literal notranslate"><span class="pre">readthedocs.vcs_support</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Business Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../business/index.html">Read the Docs Business Features</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Custom Install Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../custom_installs/index.html">Info about custom installs</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Designer Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../design.html">Designing Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://sphinx-rtd-theme.readthedocs.io/en/latest/">Theme</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Read the Docs</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">API</a> &raquo;</li>
+        
+      <li><code class="docutils literal notranslate"><span class="pre">readthedocs.core</span></code></li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/api/core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="readthedocs-core">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">readthedocs.core</span></code><a class="headerlink" href="#readthedocs-core" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-readthedocs.core.admin">
+<span id="readthedocs-core-admin"></span><h2><a class="reference internal" href="#module-readthedocs.core.admin" title="readthedocs.core.admin"><code class="xref py py-mod docutils literal notranslate"><span class="pre">readthedocs.core.admin</span></code></a><a class="headerlink" href="#module-readthedocs.core.admin" title="Permalink to this headline">¶</a></h2>
+<p>Django admin interface for core models.</p>
+<dl class="class">
+<dt id="readthedocs.core.admin.UserAdminExtra">
+<em class="property">class </em><code class="descclassname">readthedocs.core.admin.</code><code class="descname">UserAdminExtra</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.admin.UserAdminExtra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Admin configuration for User.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.core.admin.UserProfileAdmin">
+<em class="property">class </em><code class="descclassname">readthedocs.core.admin.</code><code class="descname">UserProfileAdmin</code><span class="sig-paren">(</span><em>model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.admin.UserProfileAdmin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.core.admin.UserProjectFilter">
+<em class="property">class </em><code class="descclassname">readthedocs.core.admin.</code><code class="descname">UserProjectFilter</code><span class="sig-paren">(</span><em>request</em>, <em>params</em>, <em>model</em>, <em>model_admin</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.admin.UserProjectFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter users based on project properties.</p>
+<dl class="method">
+<dt id="readthedocs.core.admin.UserProjectFilter.lookups">
+<code class="descname">lookups</code><span class="sig-paren">(</span><em>request</em>, <em>model_admin</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.admin.UserProjectFilter.lookups" title="Permalink to this definition">¶</a></dt>
+<dd><p>Must be overridden to return a list of tuples (value, verbose value)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.core.admin.UserProjectFilter.queryset">
+<code class="descname">queryset</code><span class="sig-paren">(</span><em>request</em>, <em>queryset</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.admin.UserProjectFilter.queryset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add filters to queryset filter.</p>
+<p><code class="docutils literal notranslate"><span class="pre">PROJECT_ACTIVE</span></code> and <code class="docutils literal notranslate"><span class="pre">PROJECT_BUILT</span></code> look for versions on projects,
+<code class="docutils literal notranslate"><span class="pre">PROJECT_RECENT</span></code> looks for projects with builds in the last year</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.core.admin.UserProjectInline">
+<em class="property">class </em><code class="descclassname">readthedocs.core.admin.</code><code class="descname">UserProjectInline</code><span class="sig-paren">(</span><em>parent_model</em>, <em>admin_site</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.admin.UserProjectInline" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="readthedocs.core.admin.UserProjectInline.model">
+<code class="descname">model</code><a class="headerlink" href="#readthedocs.core.admin.UserProjectInline.model" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">readthedocs.projects.models.Project_users</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.core.forms">
+<span id="readthedocs-core-forms"></span><h2><a class="reference internal" href="#module-readthedocs.core.forms" title="readthedocs.core.forms"><code class="xref py py-mod docutils literal notranslate"><span class="pre">readthedocs.core.forms</span></code></a><a class="headerlink" href="#module-readthedocs.core.forms" title="Permalink to this headline">¶</a></h2>
+<p>Forms for core app.</p>
+<dl class="class">
+<dt id="readthedocs.core.forms.FacetField">
+<em class="property">class </em><code class="descclassname">readthedocs.core.forms.</code><code class="descname">FacetField</code><span class="sig-paren">(</span><em>choices=()</em>, <em>required=True</em>, <em>widget=None</em>, <em>label=None</em>, <em>initial=None</em>, <em>help_text=u''</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.forms.FacetField" title="Permalink to this definition">¶</a></dt>
+<dd><p>For filtering searches on a facet.</p>
+<p>Has validation for the format of facet values.</p>
+<dl class="method">
+<dt id="readthedocs.core.forms.FacetField.valid_value">
+<code class="descname">valid_value</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.forms.FacetField.valid_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Although this is a choice field, no choices need to be supplied.</p>
+<p>Instead, we just validate that the value is in the correct format for
+facet filtering (facet_name:value)</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.core.forms.FacetedSearchForm">
+<em class="property">class </em><code class="descclassname">readthedocs.core.forms.</code><code class="descname">FacetedSearchForm</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.forms.FacetedSearchForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supports fetching faceted results with a corresponding query.</p>
+<dl class="docutils">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">facets</span></code></dt>
+<dd>A list of facet names for which to get facet counts</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">models</span></code></dt>
+<dd>Limit the search to one or more models</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.core.middleware">
+<span id="readthedocs-core-middleware"></span><h2><a class="reference internal" href="#module-readthedocs.core.middleware" title="readthedocs.core.middleware"><code class="xref py py-mod docutils literal notranslate"><span class="pre">readthedocs.core.middleware</span></code></a><a class="headerlink" href="#module-readthedocs.core.middleware" title="Permalink to this headline">¶</a></h2>
+<p>Middleware for core app.</p>
+<dl class="class">
+<dt id="readthedocs.core.middleware.FooterNoSessionMiddleware">
+<em class="property">class </em><code class="descclassname">readthedocs.core.middleware.</code><code class="descname">FooterNoSessionMiddleware</code><a class="headerlink" href="#readthedocs.core.middleware.FooterNoSessionMiddleware" title="Permalink to this definition">¶</a></dt>
+<dd><p>Middleware that doesn’t create a session on logged out doc views.</p>
+<p>This will reduce the size of our session table drastically.</p>
+<dl class="method">
+<dt id="readthedocs.core.middleware.FooterNoSessionMiddleware.process_response">
+<code class="descname">process_response</code><span class="sig-paren">(</span><em>request</em>, <em>response</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.middleware.FooterNoSessionMiddleware.process_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>If request.session was modified, or if the configuration is to save the
+session every time, save the changes and set a session cookie or delete
+the session cookie if the session has been emptied.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.core.middleware.ProxyMiddleware">
+<em class="property">class </em><code class="descclassname">readthedocs.core.middleware.</code><code class="descname">ProxyMiddleware</code><a class="headerlink" href="#readthedocs.core.middleware.ProxyMiddleware" title="Permalink to this definition">¶</a></dt>
+<dd><p>Middleware that sets REMOTE_ADDR based on HTTP_X_FORWARDED_FOR, if the.</p>
+<p>latter is set. This is useful if you’re sitting behind a reverse proxy that
+causes each request’s REMOTE_ADDR to be set to 127.0.0.1. Note that this
+does NOT validate HTTP_X_FORWARDED_FOR. If you’re not behind a reverse proxy
+that sets HTTP_X_FORWARDED_FOR automatically, do not use this middleware.
+Anybody can spoof the value of HTTP_X_FORWARDED_FOR, and because this sets
+REMOTE_ADDR based on HTTP_X_FORWARDED_FOR, that means anybody can “fake”
+their IP address. Only use this when you can absolutely trust the value of
+HTTP_X_FORWARDED_FOR.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.core.middleware.SingleVersionMiddleware">
+<em class="property">class </em><code class="descclassname">readthedocs.core.middleware.</code><code class="descname">SingleVersionMiddleware</code><a class="headerlink" href="#readthedocs.core.middleware.SingleVersionMiddleware" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset urlconf for requests for ‘single_version’ docs.</p>
+<p>In settings.MIDDLEWARE_CLASSES, SingleVersionMiddleware must follow after
+SubdomainMiddleware.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="readthedocs.core.middleware.SubdomainMiddleware">
+<em class="property">class </em><code class="descclassname">readthedocs.core.middleware.</code><code class="descname">SubdomainMiddleware</code><a class="headerlink" href="#readthedocs.core.middleware.SubdomainMiddleware" title="Permalink to this definition">¶</a></dt>
+<dd><p>Middleware to display docs for non-dashboard domains.</p>
+<dl class="method">
+<dt id="readthedocs.core.middleware.SubdomainMiddleware.process_request">
+<code class="descname">process_request</code><span class="sig-paren">(</span><em>request</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.middleware.SubdomainMiddleware.process_request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process requests for unhandled domains.</p>
+<p>If the request is not for our <code class="docutils literal notranslate"><span class="pre">PUBLIC_DOMAIN</span></code>, or if <code class="docutils literal notranslate"><span class="pre">PUBLIC_DOMAIN</span></code>
+is not set and the request is for a subdomain on <code class="docutils literal notranslate"><span class="pre">PRODUCTION_DOMAIN</span></code>,
+process the request as a request a documentation project.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.core.models">
+<span id="readthedocs-core-models"></span><h2><a class="reference internal" href="#module-readthedocs.core.models" title="readthedocs.core.models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">readthedocs.core.models</span></code></a><a class="headerlink" href="#module-readthedocs.core.models" title="Permalink to this headline">¶</a></h2>
+<p>Models for the core app.</p>
+<dl class="class">
+<dt id="readthedocs.core.models.UserProfile">
+<em class="property">class </em><code class="descclassname">readthedocs.core.models.</code><code class="descname">UserProfile</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.models.UserProfile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Additional information about a User.</p>
+<dl class="exception">
+<dt id="readthedocs.core.models.UserProfile.DoesNotExist">
+<em class="property">exception </em><code class="descname">DoesNotExist</code><a class="headerlink" href="#readthedocs.core.models.UserProfile.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="exception">
+<dt id="readthedocs.core.models.UserProfile.MultipleObjectsReturned">
+<em class="property">exception </em><code class="descname">MultipleObjectsReturned</code><a class="headerlink" href="#readthedocs.core.models.UserProfile.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="readthedocs.core.models.UserProfile.get_contribution_details">
+<code class="descname">get_contribution_details</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.models.UserProfile.get_contribution_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the line to put into commits to attribute the author.</p>
+<p>Returns a tuple (name, email)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-readthedocs.core.views">
+<span id="readthedocs-core-views"></span><h2><a class="reference internal" href="#module-readthedocs.core.views" title="readthedocs.core.views"><code class="xref py py-mod docutils literal notranslate"><span class="pre">readthedocs.core.views</span></code></a><a class="headerlink" href="#module-readthedocs.core.views" title="Permalink to this headline">¶</a></h2>
+<p>Core views, including the main homepage,</p>
+<p>documentation and header rendering, and server errors.</p>
+<dl class="exception">
+<dt id="readthedocs.core.views.NoProjectException">
+<em class="property">exception </em><code class="descclassname">readthedocs.core.views.</code><code class="descname">NoProjectException</code><a class="headerlink" href="#readthedocs.core.views.NoProjectException" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.core.views.server_error_404">
+<code class="descclassname">readthedocs.core.views.</code><code class="descname">server_error_404</code><span class="sig-paren">(</span><em>request</em>, <em>exception</em>, <em>template_name='404.html'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.views.server_error_404" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple 404 handler so we get media.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="readthedocs.core.views.server_error_500">
+<code class="descclassname">readthedocs.core.views.</code><code class="descname">server_error_500</code><span class="sig-paren">(</span><em>request</em>, <em>template_name='500.html'</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.views.server_error_500" title="Permalink to this definition">¶</a></dt>
+<dd><p>A simple 500 handler so we get media.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="readthedocs-core-management-commands">
+<h2><code class="xref py py-mod docutils literal notranslate"><span class="pre">readthedocs.core.management.commands</span></code><a class="headerlink" href="#readthedocs-core-management-commands" title="Permalink to this headline">¶</a></h2>
+<p>This is where custom <code class="docutils literal notranslate"><span class="pre">manage.py</span></code> commands are defined.</p>
+<span class="target" id="module-readthedocs.core.management.commands.archive"></span><p>Rebuild documentation for all projects</p>
+<span class="target" id="module-readthedocs.core.management.commands.clean_builds"></span><p>Clean up stable build paths per project version</p>
+<span class="target" id="module-readthedocs.core.management.commands.import_github_language"></span><p>Import a project’s programming language from GitHub</p>
+<p>This builds a basic management command that will set
+a projects language to the most used one in GitHub.</p>
+<p>Requires a <code class="docutils literal notranslate"><span class="pre">GITHUB_AUTH_TOKEN</span></code> to be set in the environment,
+which should contain a proper GitHub Oauth Token for rate limiting.</p>
+<span class="target" id="module-readthedocs.core.management.commands.import_github"></span><p>Resync GitHub project for user</p>
+<span class="target" id="module-readthedocs.core.management.commands.pull"></span><p>Trigger build for project slug</p>
+<span class="target" id="module-readthedocs.core.management.commands.reindex_elasticsearch"></span><p>Reindex Elastic Search indexes</p>
+<span class="target" id="module-readthedocs.core.management.commands.set_metadata"></span><p>Generate metadata for all projects</p>
+<span class="target" id="module-readthedocs.core.management.commands.symlink"></span><p>Update symlinks for projects</p>
+<span class="target" id="module-readthedocs.core.management.commands.update_api"></span><p>Build documentation using the API and not hitting a database.</p>
+<p>Usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">update_api</span> <span class="o">&lt;</span><span class="n">slug</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<span class="target" id="module-readthedocs.core.management.commands.update_repos"></span><p>Custom management command to rebuild documentation for all projects.</p>
+<p>Invoked via <code class="docutils literal notranslate"><span class="pre">./manage.py</span> <span class="pre">update_repos</span></code>.</p>
+<dl class="class">
+<dt id="readthedocs.core.management.commands.update_repos.Command">
+<em class="property">class </em><code class="descclassname">readthedocs.core.management.commands.update_repos.</code><code class="descname">Command</code><span class="sig-paren">(</span><em>stdout=None</em>, <em>stderr=None</em>, <em>no_color=False</em><span class="sig-paren">)</span><a class="headerlink" href="#readthedocs.core.management.commands.update_repos.Command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Management command for rebuilding documentation on projects</p>
+</dd></dl>
+
+<span class="target" id="module-readthedocs.core.management.commands.update_versions"></span><p>Rebuild documentation for all projects</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="projects.html" class="btn btn-neutral float-right" title="readthedocs.projects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="doc_builder.html" class="btn btn-neutral" title="readthedocs.doc_builder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2010-2018, Read the Docs, Inc &amp; contributors.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
